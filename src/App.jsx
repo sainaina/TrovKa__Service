@@ -14,6 +14,7 @@ function App() {
     }, 3000 + delay); // Total time (3 seconds + delay)
 
     return () => clearTimeout(timer);
+    
   }, []);
 
   const changeLanguage = (lng) => {
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <>
+
       <Metadata
         title="Home | TrovKa"
         description="Welcome to Service-TrovKa"
@@ -32,6 +34,7 @@ function App() {
         keywords="services, trovka, home"
         thumbnail="https://k-quicksight.istad.co/opengraph-image.jpg?d3bb2a9115260a5a"
       />
+      
       {!isAnimationComplete && <InitialAnimation />}
       <div className={`${isAnimationComplete ? 'block' : 'hidden'}`}>
         {/* Your main content goes here */}

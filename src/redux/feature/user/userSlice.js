@@ -4,6 +4,7 @@ import {
   removeAccessToken,
   getAccessToken,
 } from "../../../lib/secureLocalStorage"; // Make sure you have a function to get the token from storage
+import { BASE_URL } from "../Api";
 
 const initialState = {
   user: null,
@@ -29,7 +30,7 @@ export const fetchCreateUser = createAsyncThunk(
         confirmPassword,
       });
       const response = await fetch(
-        `${import.meta.env.VITE_BASE_URL}register/`,
+        `${BASE_URL}register/`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -57,7 +58,7 @@ export const fetchVerifyEmail = createAsyncThunk(
     try {
       const body = JSON.stringify({ email, otp_code });
       const response = await fetch(
-        `${import.meta.env.VITE_BASE_URL}verify-otp/`,
+        `${BASE_URL}verify-otp/`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -161,7 +162,7 @@ export const initializeUser = createAsyncThunk(
     if (token) {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_BASE_URL}profile/`,
+          `${BASE_URL}profile/`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

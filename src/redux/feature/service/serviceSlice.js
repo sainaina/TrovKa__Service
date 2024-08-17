@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { BASE_URL } from "../Api";
 
-// Import the BASE_URL from environment variables
-const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 // Async function to fetch a single service by ID with the correct endpoint
 export const fetchServiceById = createAsyncThunk(

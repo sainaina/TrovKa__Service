@@ -7,6 +7,7 @@ import reviewSlice from "./review/reviewSlice";
 import cateSlice from "./category/cateSlice";
 import locationSlice from "./location/locationSlice";
 
+
 // Save the state to localStorage
 const saveState = (state) => {
   try {
