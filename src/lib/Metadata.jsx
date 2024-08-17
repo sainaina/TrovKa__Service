@@ -1,8 +1,8 @@
-// Metadata.jsx
 import React from "react";
 import { Helmet } from "react-helmet";
+
 export const Metadata = ({
-  title = "Your Project's name",
+  title = "Your Project's Name",
   description = "Add default description here",
   author = "Default Author",
   keywords = "Add default keywords here",
@@ -16,12 +16,18 @@ export const Metadata = ({
       <meta name="author" content={author} />
       <meta name="keywords" content={keywords} />
       <meta name="thumbnail" content={thumbnail} />
-      <meta property="og:url" content={""} />
-      <meta property="og:type" content={"Service Listing Platform"} />
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={thumbnail} />
+      
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={thumbnail} />
     </Helmet>
   );
 };
-

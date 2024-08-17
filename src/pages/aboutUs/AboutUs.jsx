@@ -23,10 +23,10 @@ const AboutUs = () => {
   return (
     <div className="overflow-x-hidden mx-4 lg:my-[10px] lg:mx-30">
       <Metadata
-        title="AboutUs | Troka"
-        description="All about me"
-        author="SainaInaIna"
-        keywords="services, trovka, aboutus"
+        title="About Us | Troka"
+        description="Learn about Troka’s mission, vision, and goals, and how we connect users with top services."
+        author="TrovKa Team"
+        keywords="services, Troka, About Us"
         thumbnail="https://i.ibb.co/s6D2gFC/trovka-icon.png"
       />
 

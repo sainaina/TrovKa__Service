@@ -85,23 +85,23 @@ export function Mentor() {
               <h2 className="">{profile.name}</h2>
               <h2 className="text-gray-800 dark:text-gray-300">{profile.role}</h2>
               <div className="flex gap-[20px] mt-[10px] justify-center">
-                <a href={profile.github}>
+              <a href={profile.github}>
                   <img
-                    src="./public/image/icon/github.svg"
+                    src="/image/icon/github.svg"
                     className="w-[30px] h-[30px]"
                     alt="GitHub"
                   />
                 </a>
                 <a href={profile.facebook}>
                   <img
-                    src="./public/image/icon/facebook.svg"
+                    src="/image/icon/facebook.svg"
                     className="w-[30px] h-[30px]"
                     alt="Facebook"
                   />
                 </a>
                 <a href={profile.instagram}>
                   <img
-                    src="./public/image/icon/square-instagram.svg"
+                    src="/image/icon/square-instagram.svg"
                     className="w-[30px] h-[30px]"
                     alt="Instagram"
                   />
